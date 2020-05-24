@@ -1,331 +1,57 @@
-<!DOCTYPE html><html lang="en-US"><!--<![endif]--><head>
-	<base href="https://cas.tennessee.edu/cas/login?service=https%3A%2F%2Futk.joinhandshake.com%2Flogin%3Fschool_id%3D656"/>
-	<title>Login</title>
-	<meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link href="http://gmpg.org/xfn/11" rel="profile"/>
-	<link href="/cas/themes/utk/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-	<link href="/cas/themes/utk/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-	<link href="/cas/themes/utk/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-	<link href="/cas/themes/utk/images/site.webmanifest" rel="manifest"/>
-	<link color="#ef7e2d" href="/cas/themes/utk/images/safari-pinned-tab.svg" rel="mask-icon"/>
-	<link href="/cas/themes/utk/images/favicon.ico" rel="shortcut icon"/><meta name="msapplication-TileColor" content="#ef7e2d"/><meta name="msapplication-config" content="/cas/themes/utk/images/browserconfig.xml"/><meta name="theme-color" content="#ffffff"/><script>
-    /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-    (function(e){function t(t, n, r, o){"use strict"; function a(){for (var e, n = 0; u.length > n; n++)u[n].href && u[n].href.indexOf(t) > - 1 && (e = !0); e?i.media = r || "all":setTimeout(a)}var i = e.document.createElement("link"), l = n || e.document.getElementsByTagName("script")[0], u = e.document.styleSheets; return i.rel = "stylesheet", i.href = t, i.media = "only x", i.onload = o || null, l.parentNode.insertBefore(i, l), a(), i}var n = function(r, o){"use strict"; if (r && 3 === r.length){var a = e.navigator, i = e.Image, l = !(!document.createElementNS || !document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect || !document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || e.opera && - 1 === a.userAgent.indexOf("Chrome") || - 1 !== a.userAgent.indexOf("Series40")), u = new i; u.onerror = function(){n.method = "png", n.href = r[2], t(r[2])}, u.onload = function(){var e = 1 === u.width && 1 === u.height, a = r[e && l?0:e?1:2]; n.method = e && l?"svg":e?"datapng":"png", n.href = a, t(a, null, null, o)}, u.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", document.documentElement.className += " grunticon"}}; n.loadCSS = t, e.grunticon = n})(this); (function(e, t){"use strict"; var n = t.document, r = "grunticon:", o = function(e){if (n.attachEvent?"complete" === n.readyState:"loading" !== n.readyState)e(); else{var t = !1; n.addEventListener("readystatechange", function(){t || (t = !0, e())}, !1)}}, a = function(e){return t.document.querySelector('link[href$="' + e + '"]')}, c = function(e){var t, n, o, a, c, i, u = {}; if (t = e.sheet, !t)return u; n = t.cssRules?t.cssRules:t.rules; for (var l = 0; n.length > l; l++)o = n[l].cssText, a = r + n[l].selectorText, c = o.split(");")[0].match(/US\-ASCII\,([^"']+)/), c && c[1] && (i = decodeURIComponent(c[1]), u[a] = i); return u}, i = function(e){var t, o, a; o = "data-grunticon-embed"; for (var c in e)if (a = c.slice(r.length), t = n.querySelectorAll(a + "[" + o + "]"), t.length)for (var i = 0; t.length > i; i++)t[i].innerHTML = e[c], t[i].style.backgroundImage = "none", t[i].removeAttribute(o); return t}, u = function(t){"svg" === e.method && o(function(){i(c(a(e.href))), "function" == typeof t && t()})}; e.embedIcons = i, e.getCSS = a, e.getIcons = c, e.ready = o, e.svgLoadedCallback = u, e.embedSVG = u})(grunticon, this);
-    grunticon(["/cas/themes/utk/css/icons.data.svg.css", "/cas/themes/utk/css/icons.data.png.css", "/cas/themes/utk/css/icons.fallback.css"]);</script><noscript><link href="/cas/themes/utk/css/icons.fallback.css" rel="stylesheet"></noscript>
-	<link href="/cas/themes/utk/css/style.css" id="utthehill-style-css" media="all" rel="stylesheet" type="text/css"/><!--[if lt IE 9]>
- <link rel='stylesheet' id='utthehill-ie-css'  href='/cas/themes/utk/css/ie.css?ver=2015-05-20' type='text/css' media='all' />
-<![endif]--><script src="/cas/themes/utk/js/jquery.min.js"></script><!--[if lt IE 9]>
- <script src="/cas/themes/utk/js/html5shiv.js"></script>
-<![endif]-->
-	<link href="/cas/themes/utk/css/jquery-ui.css" rel="stylesheet" type="text/css"/><script src="/cas/themes/utk/js/jquery-ui.min.js" type="text/javascript"></script><script src="/cas/themes/utk/js/preserveanchors.js" type="text/javascript"></script>
-	<link href="/cas/themes/utk/css/css.css" rel="stylesheet"/>
-	<link href="/cas/themes/utk/css/dswi.css" id="dswi-style-css" media="all" rel="stylesheet" type="text/css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>greatjobdave.net</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style type="text/css">@font-face{font-family:motor;src:url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
+  <style type="text/css">@font-face{font-family:motor;src:url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/74cb29/00000000000000003b9afa2b/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body class="dropnav" id="cas"><!-- The UT Header begins here. Do not edit in this area -->
-<div id="orange-bar"> </div>
 
-<div class="hfeed site row-offcanvas" id="page">
-<div class="site-main" id="main">
-<div class="main-content"><a class="sr-only" href="#content" title="Skip to content">Skip to content</a>
 
-<div id="sidebar">
-<header class="site-header" id="masthead" role="banner">
-<h3 class="killer-logo"><a href="http://www.utk.edu">The University of Tennessee, Knoxville</a></h3>
-<button class="toggle close findpage" type="button"><span class="sr-only">Toggle navigation</span><br/>
-MENU<br/>
-</button></header>
-<!-- #masthead --><!-- #Find Box --><!-- Here is your navigation. Notice that the submenu is nested within the LI.  --><!-- Also, you'll notice it's complicated. It works for mobile and for desktop. Replicate the Button, Div, ID, and class structure.  -->
+<body>
 
-<div class="sidebar-offcanvas inactive">
-<nav role="navigation"><button class="toggle close collapseMenu" type="button"><span class="sr-only">Toggle navigation</span><br/>
-CLOSE</button><!-- Collect the nav links, forms, and other content for toggling --><!--
-       <div class="form-group">
-        <script src="/cas/themes/utk/js/cse.js" type="text/javascript"></script>
-        <gcse:searchbox-only></gcse:searchbox-only>
-       </div>
-       -->
-
-<div id="megamenu">
-<ul class="mainnav" role="menu">
-	<li><a class="home_button" href="http://oit.utk.edu/accounts/netid/" role="button">What is a UT NetID?</a></li>
-	<li><a class="home_button" href="https://ds.utk.edu/passwords" role="button">Forgot Your Password?</a></li>
-	<li><a class="home_button" href="http://help.utk.edu">Need help signing in?</a></li>
-	<li><a class="home_button" href="http://help.utk.edu/status/" target="_blank">Current service alerts and outage</a></li>
-</ul>
-</div>
-</nav>
-</div>
+<!-- LOGO -->
+<div class="container pt-5">
+  <h1>
+    <img src="Ramen_Bones_Logo_(vector).png" class="mx-auto d-block img-fluid mt-10" width="160" height="auto"class="mx-auto">
+  </h1>
 </div>
 
-<div class="content-area" id="primary">
-<header class="site-header" id="sitetitle" role="banner"><!--
-      <h2 class="department"><a title="The University of Tennessee" rel="home">The University of Tennessee</a></h2>
--->
-<h2 class="department"><a rel="home" title="Central Authentication Service">Central Authentication Service</a></h2>
-</header>
 
-<div class="site-content site-content wide" id="content" role="main">
-<article class="hentry">
-<div>
-<div class="message error" id="cookiesDisabled" style="margin-bottom: 1ex; display:none;">
-<h2>Browser cookies disabled</h2>
-
-<p>Your browser does not accept cookies. Single Sign On WILL NOT WORK.</p>
+<div class="container pt-3">
+  <nav class="nav justify-content-center">
+  <!-- Links -->
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">MENU</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">INFO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">CONTACT</a>
+    </li>
+  </ul>
+ </nav>
 </div>
 
-<div class="entry-content reg">
-<header class="entry-header">
-<nav aria-label="You are here:" class="breadcrumbs" role="navigation">Please enter your NetID and password:</nav>
-</header>
-
-<div style="clear: both"> </div>
-</div>
-<!-- .entry-content -->
-
-<form class="form-horizontal" htmlescape="true" id="fm1" method="post" onsubmit="return prepareSubmit(this);" role="form" action=""><input name="__original_url" type="hidden" value="https://cas.tennessee.edu/cas/login?service=https%3A%2F%2Futk.joinhandshake.com%2Flogin%3Fschool_id%3D656"/>
-<div class="sticky-wrapper">
-<div class="box-light" id="box-login"><!--
-         <div class="card top">
-          <h1 class="entry-title">Login</h1>
-         </div>
-         <div style="clear: both;"></div>
--->
-<div class="form-group"><label class="one-fourth column control-label" for="username">NetID:</label>
-
-<div class="two-thirds column control-column">
-<div><input accesskey="u" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus" class="form-control" htmlescape="true" id="username" name="username" placeholder="NetID" required="required" size="25" spellcheck="false" tabindex="1" type="text" value=""/></div>
-</div>
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-sm-12 text-center" class="mx-auto">
+      <h2 class="display-2">greatjobdave.net</h2>
+    </div>
+  </div>
 </div>
 
-<div class="form-group"><label class="one-fourth column control-label" for="password">Password:</label>
 
-<div class="two-thirds column control-column">
-<div><input accesskey="p" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" htmlescape="true" id="password" name="password" placeholder="Password" required="required" size="25" spellcheck="false" tabindex="2" type="password" value=""/><span id="capslock-on" style="display:none;"> </span>
+</body>
+</html>
 
-<p><span id="capslock-on" style="display:none;"><span>CAPSLOCK key is turned on!</span> </span></p>
-<span id="capslock-on" style="display:none;"> </span></div>
-</div>
-</div>
-
-<section class="row check"> </section>
-
-<div class="form-group">
-<div class="one-fourth column"> </div>
-<input name="execution" type="hidden" value="ec5b657a-efc5-4cd3-9b10-00cacb79b8f0_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuYUd3dmEzZHhVRkppZUZkdVN6SkNVak5pUTB4c2RWcEpSbVowTm1ScVprNXpaWGh6YWxkVEwzWkhjMVF4Y1daNVFtSlJhRUZsVFRGRlNHTkNXVFJNZDNSaVVVSldXRWhPVDIxd1Vsb3lkMkZuZVdVck9IazNTM1pXU2k4NVJIRkhZbnB3VWs5TlJYbFROREpqY2pSdmFrZHZPVXRYUTBoVE9XRmlaWEFyYkZWVmRGbDBVRVZVY2paaVZteEtOMDFpYUVaRU1tTTJWMjk0YjNaYVIxSTBaemt3T1RWV1ExcHBZazkxUzJOalpUWlVXR1Z2UW10YUwzazBaVlZxU25WUGRHTkpkbUZ3TmxvMGIzaDFaVUpsTkdkQ05XcDVSVE5MZDBsU1F6bFBSVEU0YTJoVVdFZG9jMW80WWtkVVdFZGxiMXBPUlc5aVRGRnJOMHBvT0RGVWJFeGhPRmszT1RSbWMzWnhNbG8yU0VWVVdHOTRWakl5VXpCMFVHbEJhakJZWkVwWVVXUkVaVVpZTlZRMWVtVmpOeTlLTW1WMlVUQldZMjV0U0RWdVdtWnJjWEp6YlRkWmVqSXhhV3hMZEhKbFJucHZkMWRKU21KRGExVjBNMVJwWTA5UFEwUm1MMU5MZFRWYVRtdEJlV1UzT0VoTGNURTRjblpTWlVvelozSTNXSG95U1ZWS1IwaFFlRTRyUTBWbFJtbDNSbEpEWjFVd01HeDZObWhpT0RSWVNtcHBTMWRSWWk5NFZIWkRaWG8yVTNWcmMxRXdhWGRCZVdndlVDOUpVREpzVTFCTlRYbFJaRmxKZW5SbFVGVnBhRzl0Y1ZoMVEzRmphbEZIVVhVck1EVkdkRTlHVFRCalZrWTNiVnBoV1hSWGFTOVNSRTU0UVhKS2RqUTBVMmhpYWtGT0wweDJRVlp2VFVVeVJuRnhXVXhJZEVzeGJIQmFaWGx0TWk5aFNreHhTWGxIUVVSUlZqaDFWemR3WW5kYWVubFJkbUZMVERCRlZVVlhVRGsxWlRsblZ5dDNTWEZtUjJZdlNXd3djbXR5WWpCek1FUXJZV3BhTDFOTlVIWk9XazFCTWxWek5sbzBSa0ZqY21Fdk5tdDFlSGRpU0VaeVlXVXhTMlZ1VTBVNE5FOXZlRE5qZUZaalluWXdNbVZ3ZWtwUmRFd3pkbVJKVURFck56VTNZUzlwVVdGVGVqZFVkbWxzTHk5emEwSmliMnRpYkdodFRuSkdRbGt6UW1sc1ozTlBjQzk0VURCNVRrSlFUVmRvT0VsM09IbHRLMjlzUVhOMk9FSkxVR2w0YlVabVpXWXdSazl2Vld4M0wySjNWalZRYTNaWVJHWkJiak5xWVZZM1QwaFlTeTlUVVZCelRuVlphbFJCZGxoRVowaEZWM1ZaU1VKWlQwYzBUek5VV1dkWFdGbE5kWGh2VUhaSVNrdFJaRWhLTDFSRFNsQjVkWGhJTjBsSE1WTlFibGRKYzB0SlZXdzJVMHg1V1VwSGVFUjZPWEkyYUhkRWVsaE5SSFU1ZEZCYU1VeEdOazVzWlRBeVltdDBVR3BZTVM5WGFIcGpPRUo1VWpCblkxVlpXbk5JUjBoRFVIQnFXR2hOWTNkSGFIQlBNWFJJZGxWVFNUVjRhV293TmxsVWJteDZZa3hJS3pOWlRWQmtMM1ZrWTNrM01ERTVjRXhuV2pRM1VIRlZWM1Y0YmpOaFpUZFFZMUJNU25FM1JrUjRaVVJZY2xaWmEzcGFZa1pGZWt3eVlsbDNSSEJ0UVVKcloycG5RamhuWVZkUVVtaGpNWE14TVhKdldHRTVhMUZRZFhaTFQybHdaSEpJWWsxbVJFMDJkRzVsYVd4MFZYWkZiM1JSZDFkVU1HSkNURk5MUzBGS1MwWTFNMFUxVm1OVWEzTlFXVnBOUldWaU0zRnlVa2w2VHpCc1ZtcFdaVWx2UW01QlNIbFNLMUZ1YjBoeFZXRk5lREEwTUNzM1JGaEdlVEE0Uld0WlNuSlRSM0U0ZFZwRk9HZHNiM0p6ZDNKbGNYQnVSek53TkdWdFRtdzJXalY2U1ZCQlptTmpTRnB6TkVFMmMxTkNUazVXVTBSUlkwNUZSRGR4YVRaR05YbDJVRFJPYzBOV05GZGthV3BwV1ZaMlNXcFlRVmxvS3pabVpXUnJlVmxJWjBORk5ucEVjbFJwTlVKSFlrWk5Wek5aYXpWU1YzVk5iWFpXYmprM2NrVllXV05FT0ZWbVF5OHdhRXhqV0hBemNsQkZkMHBTY1ZOYVVrdHZURzlTYnpBMU0yTjNkbkpDZHpaV2RGQkNRa05HVENzNVQzbHRkbkpqWlZVNFZHVXhSalJ5WjNreU5UQXdOazRyYTNjNWVsbEdhMFZyTWpWRFQwbEVRMUZSYUZNNVNsWnRNVTgwTVVWT1VYTnRWMVowY0hSUFpERjZSMmhhVlVSb2JFZEhkMWRpVTNGSFIySk5ZblZrU1hWMVZFOTJTVUZpUWtKWU15OUNTWGMzVFVacUwxQTFTamNyUjAxclYxSmljWGRIVTJwRmExaFFlWEZ2Ympkb1kyZDVibWxwVUZWc1ZrZG9kQzl0WjFkcmJUTjRkR04xYjFsUFNHbEJla0l4UTBRd2RERkJVamRtUXk5dU1GSm5ZaTlLV0ZkbGFsSlljR0ozVkc5VGFHWnhjbWM1YzJZdmRFMTBObFJETWxod1dtWnJWV2RaUjA5dE1XUldVVXRIZDJneWEwWnNVVEJpZDJocVNEZHdVRFoyWmpCYVRIQkZWVTA0Vld4SVUxQkpXRVZNVlVWTGJHbDVhek5TVkd3d1JVUndZVFJoTURsRU0zUlZabm80V2tsTU4wRnlVRzUyTmxoNEx6TlpTbFE0WWtoYVNHSklVM2RtZVZoME5FNXZSM2RUWWpOM1dXUlRPRlF6V0ZFemRHeFlNVWg0ZW5sdlpFcDVhMHQ2U1dZMGMwMXdSa051TDIxM2MyZDZZWEJGVVRSNFRVaFJiV2xVY1d3NVIya3dOSFY0ZUhwYWVXUlRkVFp0WTI1TVpXOVdjMHBNT0VkVVFYZHNkRGhuV2s1UVprUkRWM0ZUTDJoQ1ZuSmpOMFp5ZDNCbGVWQlVlbU5GVEV0RFdXczFUbUZtY21kVWFVRkVRMVJKT1hOaFVtVnhNRzExYkN0S05XaElZVWxxV1V4dGNXSXhNVk5FUjFkMlUwTTRPRGxVYjNSVFVHZ3lVWFZUYjI5WVdsQk1TRWw2VURkRWEybFBObFJxTmxWeGRteGFUeXRGVFVoMk1pOW1RVFZSTUhOSlRWWndWVVo2UkhocVpXeFVjM0IwUjJWR1JEQndRMjlxUzIwellWVldTRVZ0UTNOSFZtUkNaR2w2ZHpWT1FYaGhTaTlsYUdSbGFXcHJZakE0TXpsS0wxUnFibkV6ZFdORlpFNWlOalYxVjBkeldFUkRabVYxZDNkNWRYQmtWUzltWnk5dlptMUliRkF3VGs4MWVYWjNka3RoTldoRldqVkplRTFGU0VWVGNVNDVRbE5CYkZKSFExQjNlV2xVVEc5T05Fb3piRFJ4UjBSVWJVbHpSMkp1WjBReWVpOURiRk4zYkZoWVlXMWxjRU4wVm1sdlFURklZMU5HYTJKWWIxbGljMXBsZUhReE1HMXVhRmxxYkZOS1prdFNVbkZ2V1N0dE1GUTRlSFJMY21wcWN6aG1VbGxMVTNZNVoxTm5kbVF3ZDB0dVZscE9TVEpSYURWNFRVSkNaVWgyYVUxWVMwTldjVEEyVFVaeE5uWlRlRWcxWjI4emRYQnFXamRaUzJOS2JHWlFRMVJSYlRocGVtUm1Va3haZHpoblNHSjNZWE13YVZSWFRVSk9iVTVMVDI0eGVVRmhTaXMwUXpCWGRFMXdWV1pDYkdFMVNVbERiemR2UzJNMmRESnlRVWR1VDBsMWNHTjZZV295Y1VGdVVUWkxUWFV3WmxRek1FVmFVRkEzYjNveWVGcEVTRVk1ZGpNM1VXbEJWMmxJVFhaalJXRnVVVkUwYm10MlpsZGhTR0pxWkRGUFZUZ3dla05aT0cwMlpHTjJSMGhNVmpWWVlteG5NbkU1ZGxGcFZtOWlNVlYzVVRGdkwzbzVUQ3N4UkVaNVVFRm5ZVU5NWldaVU9ESlhTRGxtUlZWMlQyeEJkVXRQVTA1dVlXWldiR3N3YTFwRE5UZHRkM293YVN0alpGQjJXWFZtUTJFck9HOUxUMFpHZG0xM1lUTXdOMjFYUkhWa1pGaERlWFZSVEdOS1dqWkdXa1JoVUhCQk5XZDFRM01yYURWRk5FOU5ibmRPV0dSeGFFRkpSVTFNTDA1RGFHMDNRMFZqY0dwWmJsSlZTeTlpUjI1eVFrRlNkREJMYjJoSVdtcHdLMFpyVDBoUlJsZDZkSElyVjB0dmF6Ulhja041YTJGemEyVmpaa2R4YzJ0WlREQllhMFp0U1hJMVdsUm1SazQzWVZSU1pTdGFSVmhMU25aS1lXMHpUME5HZVRCbE1tUlpjM1J5TUZkcUwzRnBTMjlUVXpkTVNVcEZSVE5VZWxRMWNYSTRhU3R5YzFZeVVVdHdRbElyVVRadFJXWjNjM1V5YzBWU1lYaExWMEZ0Y0dKaWNXTkJlVTFqWVc5WFNtWnZhVTV0UlVOVlYwZHVWbmhHSzJGbGFERmhhRXhEV2tVNFZYZG9PVFI1Y0hsNGEyOXpXbFJLZUdWa2RDOUVhRms0YzFOelowMWpha2RTZUV0dk9XSXJRVXM1Um1STVdtVm1jbVpMZUhOcFUyazRhbU00U1daNVRESTJaMjVOTmtSclZUZzFiREUzYkhoS2NsSlJWbmt3V1V4a09ITmtUMVJxU2xORmRqVkJkVVpwTDJsbFZWVTRjQzltVUhGa1IycFZkMmhTVVVkbFpXTm9SazVMTjFFOVBRLjhNSXNmei12Q05BZWZEZDlFYXJwMnJ5dlpySWcycW9zNGNZNllGMHFjczZLOXhFcWtpWHJ6eFRQdkZ4YUowTkJKSmNKZW1BUTZKTFkzQnhDM2Y3ZWFR"/><input name="_eventId" type="hidden" value="submit"/><input name="geolocation" type="hidden"/><input accesskey="l" class="btn two-thirds column control-column" name="submit" tabindex="6" type="submit" value="LOGIN"/></div>
-</div>
-<noscript><span>your browser needs javascript enabled to properly use this site<br/></span></noscript></div>
-</form>
-<script type="text/javascript">
-        var i = "One moment please..."
-        $("#fm1").submit(function() {
-            $(":submit").attr("disabled", true);
-            $(":submit").attr("value", i);
-            return true;
-        });
-
-        if(document.getElementById) {
-            document.getElementById("username").focus();
-        }
-    </script>
-
-<div style="clear: both"> </div>
-
-<footer class="entry-meta">
-<div>
-<p class="help-block">By logging in to this site, you agree to the terms of the <a href="https://universitytennessee.policytech.com/docview/?docid=157&amp;public=true" target="_blank">UT Acceptable Use Policy</a>.</p>
-</div>
-<!-- .entry-content --></footer>
-<!-- .entry-meta -->
-
-<div class="entry-content reg">
-<style type="text/css">.campus-full{
-    display: none
-}
-.campus-short{
-    margin-top: 1px;
-    display: block
-}
-.campus-box{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    background-color: #ebebeb;
-}
-.campus-background-img{
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-.campus-text {
-    position: absolute;
-    color: #000000;
-    width: 100%;
-    height: 90%;
-    top: 0;
-    left: 0
-}
-.campus-text-large {
-    background-color: #376488;
-    color: #ffffff
-}
-.campus-mobile-link {
-    text-align: center;
-    margin-top: 2px;
-    font-weight: 700;
-    font-size: 5vw
-}
-@media only screen and (min-width: 600px){
-    .campus-full{
-        margin-top: 5px;
-        display: block
-    }
-    .campus-short{
-        display: none
-    }
-    .campus-text-large {
-        font-weight: 700;
-        text-align: center
-    }
-    .campus-text-medium {
-        margin-top: -2%;
-        margin-bottom: 1%;
-        text-align: center
-    }
-    .campus-btn-group{
-        padding-left: 2.5%
-    }
-    .campus-btn-column{
-        float: left;
-        width: 25%;
-        margin-bottom: 3pt !important
-    }
-    .campus-btn {
-        background-color: #FFFFFF;
-        font-weight: 700;
-        color: #000000 !important;
-        padding: 1pt 0;
-        border: 3pt solid;
-        width: 90%
-    }
-    .campus-btn-1 {
-        border-color: #ff8200 !important
-    }
-    .campus-btn-2 {
-        border-color: #e0aa0f !important
-    }
-    .campus-btn-3 {
-        border-color: #002649 !important
-    }
-    .campus-btn-4 {
-        border-color: #006a4d !important
-    }
-    .campus-not-sure {
-        font-style: italic;
-        text-align: center
-    }
-}
-@media only screen and (min-width: 600px) and (max-width: 989px) {
-    .campus-full{
-        margin-top: 10px;
-    }
-    .campus-text-large {
-        margin-top: -10px;
-        font-size: 3vw
-    }
-    .campus-text-medium {
-	margin: 5px;
-        font-size: 2.25vw
-    }
-    .campus-btn {
-        font-size: 1.75vw;
-        border-radius: 1.75vw
-    }
-    .campus-not-sure {
-        font-size: 1.75vw
-    }
-}
-@media only screen and (min-width: 990px) and (max-width: 1555px){
-    .campus-text-large {
-        margin-top: -5px;
-        font-size: 2vw
-    }
-    .campus-text-medium {
-	margin: 2px;
-        font-size: 1.5vw
-    }
-    .campus-btn {
-        font-size: 1.17vw;
-        border-radius: 1.17vw
-    }
-    .campus-not-sure {
-        font-size: 1.17vw
-    }
-}
-@media only screen and (min-width: 1556px) {
-   .campus-text-large {
-        margin-top: -5px;
-        font-size: 31.1px
-    }
-    .campus-text-medium {
-	margin: 5px;
-        font-size: 23.3px
-    }
-    .campus-btn {
-        border-radius: 18.2px;
-        font-size: 18.2px
-    }
-    .campus-not-sure {
-        font-size: 18.2px
-    }
-}
-</style>
-<div class="box-light campus-box" id="campus-box"><img alt="Background" class="campus-background-img" src="/cas/themes/utk/images/2fa-cas-background.png"/>
-<div class="campus-text campus-full">
-<div class="campus-text-large">Two Factor at UT</div>
-
-<div class="campus-text-medium">Be two times as safe - enable two factor. Select your campus to learn more.</div>
-
-<div class="campus-btn-group">
-<div class="campus-btn-column"><a class="btn campus-btn campus-btn-1" href="https://2fa.utk.edu/" target="_blank">UTK</a></div>
-
-<div class="campus-btn-column"><a class="btn campus-btn campus-btn-2" href="https://www.utc.edu/information-technology/2fa.php" target="_blank">UTC</a></div>
-
-<div class="campus-btn-column"><a class="btn campus-btn campus-btn-3" href="https://www.utm.edu/departments/help/2fa.php" target="_blank">UTM</a></div>
-
-<div class="campus-btn-column"><a class="btn campus-btn campus-btn-4" href="https://www.uthsc.edu/its/information-security/duo/index.php" target="_blank">UTHSC</a></div>
-</div>
-
-<div class="campus-not-sure">Not sure which campus to choose? <a href="https://help.utk.edu/kb/entry/2807" target="_blank">Find out online</a>.</div>
-</div>
-
-<div class="campus-text campus-short">
-<div class="campus-mobile-link">Learn more about<br/>
-<a href="https://2fa.utk.edu/" target="_blank">Two-Factor Authentication</a></div>
-</div>
-</div>
-
-<div style="clear: both"> </div>
-</div>
-<!-- .entry-content --><br/>
-<!-- 
-< script type="text/javascript" src="https://bannersssb.utk.edu/kbanse/twbkwbis.P_Logout"></script>
---><script type="text/javascript" src="https://bannerssb.utk.edu/kbanpr/twbkwbis.P_Logout"></script><script type="text/javascript" src="https://banner.utk.edu/BannerExtensibility/logout"></script></div>
-</article>
-
-<div> </div>
-</div>
-<!-- #primary --></div>
-<!-- .main-content --></div>
-<!-- #main -->
-
-<div id="system-indicia">
-<p style="float: left">The flagship campus of <a href="http://tennessee.edu">the University of Tennessee System</a> and partner in <a href="http://www.tntransferpathway.org/">the Tennessee Transfer Pathway</a>.</p>
-</div>
-</div>
-</div>
-<!-- #page --><script type="text/javascript" src="/cas/themes/utk/js/utk-min.js"></script>
-
-</body></html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
