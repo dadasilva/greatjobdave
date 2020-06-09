@@ -1,12 +1,14 @@
-body, html {
+
+html {
   height: 100%;
   /* The image used */
-  background: url("../assets/rockgrowth.JPG") no-repeat center center fixed;
+  background: url("../assets/rockgrowth.JPG") no-repeat center fixed;
   /* Center and scale the image nicely */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover
+
 }
 
 img {
@@ -16,7 +18,21 @@ img {
 }
 
 h2 {
-  color: green;
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 60px;
+  color: white;
+  line-height: normal;
+}
+
+button {
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 30px;
+  background: transparent;
+  border-style: hidden;
+  color: white;
+  line-height: normal;
 }
 
 .img{
