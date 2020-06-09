@@ -1,13 +1,13 @@
 
-html {
+html, body{
   height: 100%;
   /* The image used */
-  background: url("../assets/rockgrowth.JPG") no-repeat center fixed;
+  background: url("../assets/rockgrowth.JPG"); /*no-repeat center fixed*/
   /* Center and scale the image nicely */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover
+  background-size: cover;
 
 }
 
@@ -17,9 +17,10 @@ img {
   padding-top:10px;
 }
 
-h2 {
+h1 {
   font-family: monospace;
   font-style: oblique;
+  background-color: transparent;
   font-size: 60px;
   color: white;
   line-height: normal;
@@ -40,14 +41,7 @@ button {
   height: fixed;
 }
 
-.container {
-  display: flex;
 
-}
-
-.center-me {
-  margin: 0 auto;
-}
 
 .mt-0 {
   margin-top: 0 !important;
@@ -66,8 +60,4 @@ button {
 
 .p-3 {
   padding: $spacer !important;
-}
-
-.bg {
-
 }

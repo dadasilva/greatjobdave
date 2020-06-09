@@ -3,40 +3,58 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>greatjobdave.net</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is greatjobdavedotnet">
     <meta name="author" content="DAD.JR">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- Top  -->
-    <div class="container-fluid" style="height: 25%">
-      <h2 class="center-me bg-transparent text-dark" style="width: 100%";>greatjobdave</h2>
-      <h2 class="bg-transparent text-dark">.net</h2>
+    <div class="container-fluid">
+      <h1 class="align-right" style="width: 100%";>
+        greatjobdave
+      <h1 class="align-left">
+        .net
+      </h2>
+    </h1>
     </div>
 
-
-    <div class="row">
-      <button type="button" class="btn" href="#photobutton" data-toggle="collapse">
-        <span class="glyphicon glyphicon-plus"></span>Photos
-      </button>
-      <div class="collapse center-me" id="photobutton"  style="width: 50%";>
-          <img class=" center-me"  src="assets/pics/01.jpeg"; >
+    <div class="container-fluid center-me">
+      <div class="row row-sm-auto">
+        <div class="col col-sm-auto">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Photos
+          </button>
+        </div>
+        <div class="col col-sm-auto">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="photoButton">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Projects
+          </button>
+        </div>
+        <div class="col col-sm-auto">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="photoButton">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Notes
+          </button>
+        </div>
+        <div class="collapse" id="photoButton">
+          <img src="assets/pics/01.jpeg" class="img mx-auto"  style="width: 100%"></img>
+        </div>
       </div>
     </div>
-    <div class="container" style="height: 50%;"></div>
-
-
-
+    <!-- Bottom  -->
   </body>
 
 </html>
