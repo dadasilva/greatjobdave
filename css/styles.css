@@ -18,16 +18,16 @@ img {
 }
 
 h1 {
-  font-family: monospace;
+ font-family: Times, Helvetica, sans-serif;
   font-style: oblique;
-  background-color: transparent;
+   background-color: transparent;
   font-size: 60px;
   color: white;
   line-height: normal;
 }
 
 button {
-  font-family: monospace;
+  font-family: Times, Helvetica, sans-serif;
   font-style: oblique;
   font-size: 30px;
   background: transparent;
