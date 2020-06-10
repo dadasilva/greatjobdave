@@ -29,30 +29,40 @@
         greatjobdave
       <div class="col col-sm-auto"><h1 class="align-left">
         .net
-      </h2></div>
+      </h1></div>
       </h1>
     </div>
 
-    <div class="container-fluid">
-      <div class="row row-lg-auto">
-        <div class="col col-sm-auto">
+    <div class="container-fluid" id="menu">
+      <div class="row row-sm 6 row-lg-12">
+        <div class="col col-sm-6 col-lg-12">
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Photos
           </button>
         </div>
-        <div class="col col-sm-auto">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="photoButton">
+        <div class="col col-sm-6 col-lg-12">
+          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Projects
           </button>
         </div>
-        <div class="col col-sm-auto">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="photoButton">
+        <div class="col col-sm-6 col-lg-auto">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Notes
           </button>
         </div>
       </div>
-      <div class="collapse" id="photoButton">
-        <img src="assets/pics/01.jpeg" class="img-fluid" alt="PACIFICA" style="width: 50%"></img>
+        <div class="collapse row mx-auto" id="photoButton" data-toggle="modal" data-target="photoGallery">
+          <div class="" id="gallery">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="mx-auto" alt="PACIFICA"></img>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="img-fluid" alt="PACIFICA"></img>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-12">
+              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="img-fluid" alt="PACIFICA"></img>
+            </div>
+        </div>
       </div>
     </div>
     <!-- Bottom  -->
