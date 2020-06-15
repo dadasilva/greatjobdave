@@ -22,50 +22,59 @@
   </head>
 
   <body>
-    <!-- Top  -->
-    <div class="container-fluid">
-      <div class="col col-sm-auto">
-      <h1 class="text-fluid" style="width: 50%";>
-        greatjobdave
-      <div class="col col-sm-auto"><h1 class="align-left">
-        .net
-      </h1></div>
-      </h1>
-    </div>
 
-    <div class="container-fluid" id="menu">
-      <div class="row row-sm 6 row-lg-12">
-        <div class="col col-sm-6 col-lg-12">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Photos
-          </button>
+    <!-- HEADER  -->
+    <header class="sticky-top">
+      <div class="col row-sm-6 row-lg-30">
+        <div class="float-left">
+          <h1 class="text-align-left";>
+            greatjobdave
+          </h1>
         </div>
-        <div class="col col-sm-6 col-lg-12">
-          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Projects
-          </button>
-        </div>
-        <div class="col col-sm-6 col-lg-auto">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Notes
-          </button>
+        <div class="col row-lg-12">
+        <h1 class="align-left">
+          .net
+        </h1>
         </div>
       </div>
-        <div class="collapse row mx-auto" id="photoButton" data-toggle="modal" data-target="photoGallery">
-          <div class="" id="gallery">
-            <div class="col-12 col-sm-6 col-lg-12">
-              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="mx-auto" alt="PACIFICA"></img>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-12">
-              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="img-fluid" alt="PACIFICA"></img>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-12">
-              <img src="assets/pics/01.jpeg" data-target="carousel" data-slide-to="0" class="img-fluid" alt="PACIFICA"></img>
-            </div>
+
+      <!-- MENU -->
+      <div class="container-fluid" id="menu">
+        <div class="row">
+          <div class="col row-sm col-lg-12">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
+              Photos
+            </button>
+          </div>
+          <div class="col row-sm col-lg-12">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
+              Notes
+            </button>
+          </div>
+          <div class="col row-sm row-lg-12">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
+              Projects
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--PHOTO GALLERY-->
+
+    <div class="collapse row mx-auto" id="photoButton" data-toggle="collapse" data-target="photoButton">
+      <div class="row" id="gallery">
+        <div class="col-12 col-sm-6">
+          <img src="assets/pics/pic1.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="col-12 col-sm-6">
+          <img src="assets/pics/pic2.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="col-12 col-sm-6">
+          <img src="assets/pics/pic5.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100" alt="PACIFICA"></img>
         </div>
       </div>
     </div>
-    <!-- Bottom  -->
+  <!-- BOTTOM  -->
   </body>
-
 </html>
