@@ -45,31 +45,36 @@
       </div>
 
       <!-- MENU -->
-      <div class="container-fluid" id="menu">
-        <div class="row">
-          <div class="col row-sm col-lg-12">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
+
+      <div class="navbar fixed-bottom align-right navbar-light bg-dark" id="menu">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav-item">
+            <button class="nav-link" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
               Photos
             </button>
           </div>
-          <div class="col row-sm col-lg-12">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
+          <div class="nav-item">
+            <button class="nav-link" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
               Notes
             </button>
           </div>
-          <div class="col row-sm row-lg-12">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
+          <div class="nav-item">
+            <button class="nav-link" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
               Projects
             </button>
           </div>
         </div>
+      </div>
       </div>
     </header>
 
     <!--PHOTO GALLERY-->
 
     <div class="collapse row mx-auto" id="photoButton" data-toggle="collapse" data-target="photoButton">
-      <div class="row" id="gallery">
+      <div class="row" >
         <div class="col-12 col-sm-6">
           <img src="assets/pics/pic1.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
         </div>
@@ -85,9 +90,14 @@
     <!-- NOTES -->
     <div class="collapse row mx-auto" id="notesButton" data-toggle="collapse" data-target="notesButton">
       <div class="container-fluid">
-        <div class="col mx-auto">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="./text.html"></iframe>
+        <div class="row">
+          <div class="card bg-dark w-50 mx-auto">
+            <div class="card-body ">
+              <h5 class="card-title">Jan.9.2020</h5>
+              <p class="card-text" src="./text.html">
+                <iframe src="./text.html" frameborder="0"></iframe>
+              </p>
+            </div>
           </div>
         </div>
       </div>
