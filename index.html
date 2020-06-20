@@ -21,33 +21,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-  <body>
+<body>
 
     <!-- HEADER  -->
-    <header class="sticky-top">
-      <div class="row-sm-6 row-lg-30">
-        <div class="col float-left">
-          <h1 class="text-align-left";>
-            greatjobdave
-          </h1>
-        </div>
-        <div class="col row-lg-12">
-        <h1 class="align-left">
-          .net
-        </h1>
-        </div>
-      </div>
-
+    <header>
       <!-- MENU -->
-
-      <div class="navbar fixed-bottom align-right navbar-light bg-dark" id="menu">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="navbar navbar-expand-lg fixed-below navbar-light bg-warning" id="menu">
+        <h1 class="navbar-brand" href="#">greatjobdave.net</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="nav-item">
-            <button class="nav-link" type="button" data-toggle="collapse" data-target="#photoButton" aria-expanded="false" aria-controls="photoButton">
-              Photos
+          <div class="nav-item ">
+            <button class="nav-link" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
+              Projects
             </button>
           </div>
           <div class="nav-item">
@@ -55,28 +42,68 @@
               Notes
             </button>
           </div>
-          <div class="nav-item">
-            <button class="nav-link" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
-              Projects
+          <div class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Photos
             </button>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#caliPhotoButton" aria-expanded="false" aria-controls="caliPhotoButton">
+                California
+              </button>
+              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#tennPhotoButton" aria-expanded="false" aria-controls="tennPhotoButton">
+                Tennessee
+              </button>
+              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#peepPhotoButton" aria-expanded="false" aria-controls="peepPhotoButton">
+                People
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      </div>
+    </nav>
     </header>
 
-    <!--PHOTO GALLERY-->
+    <!--CALI PHOTO GALLERY-->
+    <div class="collapse  mx-auto" id="caliPhotoButton" data-toggle="collapse" data-target="caliPhotoButton">
+      <div class="gallery" id="gallery">
+        <div class="col-sm-12 col-lg-24 pics animation all 2">
+          <img src="assets/pics/cali/muirwoods.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="col-sm-12 col-lg-24 pics animation all 2">
+          <img src="assets/pics/cali/pacifica1.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="col-sm-12 col-lg-24 pics animation all 2">
+          <img src="assets/pics/cali/saltflatsf.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100" alt="PACIFICA"></img>
+        </div>
+      </div>
+    </div>
 
-    <div class="collapse row mx-auto" id="photoButton" data-toggle="collapse" data-target="photoButton">
-      <div class="row" >
-        <div class="col-12 col-sm-6">
-          <img src="assets/pics/pic1.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+    <!--TENN PHOTO GALLERY-->
+    <div class="collapse row mx-auto" id="tennPhotoButton" data-toggle="collapse" data-target="tennPhotoButton">
+      <div class="gallery" id="gallery">
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/tenn/train.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
         </div>
-        <div class="col-12 col-sm-6">
-          <img src="assets/pics/pic2.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/tenn/smokey.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
         </div>
-        <div class="col-12 col-sm-6">
-          <img src="assets/pics/pic5.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100" alt="PACIFICA"></img>
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/tenn/altamont.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100" alt="PACIFICA"></img>
+        </div>
+      </div>
+    </div>
+
+    <!--PEOPLE PHOTO GALLERY-->
+    <div class="collapse row mx-auto" id="peepPhotoButton" data-toggle="collapse" data-target="peepPhotoButton">
+      <div class="gallery" id="gallery">
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/people/family.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/people/friends.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100 mx-auto" alt="PACIFICA"></img>
+        </div>
+        <div class="mb-3 pics animation all 2">
+          <img src="assets/pics/people/mikchan1.jpeg" data-target="carousel" data-slide-to="0" class="d-block w-100" alt="PACIFICA"></img>
         </div>
       </div>
     </div>
