@@ -1,67 +1,85 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>greatjobdave.net</title>
-    <meta name="description" content="This is greatjobdavedotnet">
-    <meta name="author" content="DAD.JR">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+  <title>greatjobdave.net</title>
+  <meta name="description" content="This is greatjobdavedotnet">
+  <meta name="author" content="DAD.JR">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 
 <body>
 
-    <!-- HEADER  -->
-    <header>
-      <!-- MENU -->
-      <nav class="navbar navbar-expand-lg fixed-below navbar-light bg-warning" id="menu">
-        <h1 class="navbar-brand" href="#">greatjobdave.net</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="nav-item ">
-            <button class="nav-link" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
-              Projects
+<!-- HEADER  -->
+<header>
+    <!-- MENU -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-warning" id="menu">
+      <p class="navbar-brand align-middle px-1" href="#">
+        <img src="./assets/face.svg" width="60" height="60" class="d-inline-block align-left"  alt="face">
+          <h3>greatjobdave.net</h3>
+      </p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-top" id="navbarNav">
+        <div class="nav-item ">
+          <button class="nav-link" type="button" data-toggle="collapse" data-target="#projectsButton" aria-expanded="false" aria-controls="projectsButton">
+            projects
+          </button>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
+            notes
+          </button>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            photos
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#caliPhotoButton" aria-expanded="false" aria-controls="caliPhotoButton">
+              California
             </button>
-          </div>
-          <div class="nav-item">
-            <button class="nav-link" type="button" data-toggle="collapse" data-target="#notesButton" aria-expanded="false" aria-controls="notesButton">
-              Notes
+            <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#tennPhotoButton" aria-expanded="false" aria-controls="tennPhotoButton">
+              Tennessee
             </button>
-          </div>
-          <div class="nav-item dropdown">
-            <button class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Photos
+            <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#peepPhotoButton" aria-expanded="false" aria-controls="peepPhotoButton">
+              People
             </button>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#caliPhotoButton" aria-expanded="false" aria-controls="caliPhotoButton">
-                California
-              </button>
-              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#tennPhotoButton" aria-expanded="false" aria-controls="tennPhotoButton">
-                Tennessee
-              </button>
-              <button class="dropdown-item" href="#" type="button" data-toggle="collapse" data-target="#peepPhotoButton" aria-expanded="false" aria-controls="peepPhotoButton">
-                People
-              </button>
-            </div>
           </div>
         </div>
       </div>
-    </nav>
-    </header>
+    </div>
+  </nav>
+</header>
+
+    <!-- SPACE -->
+
+
+    <!-- PROJECTS -->
+
+    <div class="card bg-warning fixed-right p-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Hello!</h5>
+        <p class="card-text">This is my portfolio site.</p>
+        <a href="https://Github.com/dadasilva" class="btn btn-primary">Checkout my Github</a>
+      </div>
+    </div>
+
+
 
     <!--CALI PHOTO GALLERY-->
     <div class="collapse  mx-auto" id="caliPhotoButton" data-toggle="collapse" data-target="caliPhotoButton">
@@ -127,5 +145,16 @@
     </div>
 
   <!-- BOTTOM  -->
+  <footer>
+    <div class="navbar fixed-bottom navbar-light bg-transparent" id="foot">
+      <div class="nav-item">
+        <div class="nav-link">
+          <img src="./icons/device-camera.svg" href="https://instagram.com/greatjobdave/"></img>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
   </body>
 </html>
