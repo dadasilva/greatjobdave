@@ -1,23 +1,21 @@
-<link href="txtstyle.css" rel="stylesheet" type="text/css" />
-<p class="lead">He is perched in the doorway smoking a cigarette
+He is perched in the doorway smoking a cigarette
 His house sways with the wind
 He can hear a distant cat bellow to be let inside
 A distant chime cracks near the window of a sleeping widow
-And the sky shares the stories of the ocean </p>
+And the sky shares the stories of the ocean
 
-<p>Once this was all sea
+Once this was all sea
 Our former selves mulled about within the consciousness of God
 We cracked within waves near the window of a fatherless son
-And a wind carried his thoughts to shore</p>
+And a wind carried his thoughts to shore
 
-<p>Once upon land the brush of the sea
+Once upon land the brush of the sea
 Made advances to the sky as it only knew days ago within the sea
-Their mouths gaping and scorched from the star above learned yet what it meant to be apart from home</p>
+Their mouths gaping and scorched from the star above learned yet what it meant to be apart from home
 
-<p>Set apart from all this stood a man without clothes resisting his urge to die
+Set apart from all this stood a man without clothes resisting his urge to die
 And he heard the wind tell the stories of the ocean
 And he made advances in the darkness
 To find the fire
 And he remembered the sound of the cat bellowing to be let inside
 It was cast amongst the marching cleats of rail cars
-</p>

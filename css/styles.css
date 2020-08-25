@@ -2,13 +2,11 @@
 html, body{
   height: 100%;
   /* The image used */
-  background: url("../assets/rockgrowth.JPG"); /*no-repeat center fixed*/
   /* Center and scale the image nicely */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 img {
@@ -26,12 +24,30 @@ h1 {
   line-height: normal;
 }
 
+h4 {
+ font-family: monospace;
+  font-style: normal;
+   background-color: transparent;
+  font-size: 20px;
+  color: black;
+  line-height: normal;
+}
+
 h3{
  font-family: monospace;
   font-style: oblique;
    background-color: transparent;
   font-size: 30px;
   color: white;
+  line-height: normal;
+}
+
+h5{
+ font-family: monospace;
+  font-style: normal;
+   background-color: transparent;
+  font-size: 15px;
+  color: black;
   line-height: normal;
 }
 
