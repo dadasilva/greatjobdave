@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+CNAME
+.vs 
+/tests
+vendor
+
