@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!-- BODY -->
+{%block header %}projects{% endblock%}
+
+{% block content %}
+<div class="container">
+  <div class="align-center" data-target="projectsButton">
+    <div class="container">
+      <div class="card  border-dark mb-3">
+        <h5 class="card-header"> {{ data.title }} </h5>
+          <iframe src="{{ data.url }}" class="card-img-top sticky-top" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

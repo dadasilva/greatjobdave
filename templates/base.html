@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>greatjobdave.net</title>
+  <meta name="description" content="This is greatjobdavedotnet">
+  <meta name="author" content="DAD.JR">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="../static/css/styles.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- MENU -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-warning" id="menu">
+        <a href="{{ url_for('home') }}"><h3>greatjobdave.net</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse align-top" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+      <div class="nav-item">
+        <button class="nav-link" type="button" aria-controls="projectsButton">
+          <a href="{{ url_for('projects') }}">projects</a>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link" type="button" aria-controls="notesButton">
+          <a href="{{ url_for('notes') }}">notes</a>
+        </button>
+      </div>
+      <div class="nav-item ">
+        <button class="nav-link" type="button" aria-control="photosButton">
+          <a href="../OLD/photos.html">photos</a>
+        </button>
+      </div>
+    </ul>
+    </div>
+  </nav>
+
+  <!-- SPACE -->
+  <div class="container">
+    <div class="row" style="height: 100px;">
+      {% block head %}{% endblock %}
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="container">
+    <div class="row">
+        {% block content %}{% endblock %}
+      <div class="col-3 sticky-bottom">
+        <div id="sidebarList" >
+            {% block sidebar %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM  -->
+  <footer>
+    <div class="navbar fixed-bottom navbar-light bg-transparent" id="foot">
+      <div class="nav-item">
+        {% block footer %}{% endblock %}
+      </div>
+    </div>
+  </footer>
+
+
+  </body>
+</html>
