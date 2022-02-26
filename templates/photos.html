@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{%block header %}photos{% endblock%}
+
+{% block content %}
+    <!-- PHOTOS -->
+    <div class="container">
+      <div class="align-center" data-target="projectsButton">
+          <div class="row">
+              {% for p in data %}
+                <div class="container">
+                     <div class="col-sm-12 col-lg-24 pics animation all 2">
+                      <img src="{{ p.path }}" class="d-block w-100 mx-auto" alt="{{ p.name }}">
+                    </div>
+                </div>
+              {% endfor %}
+              {% block sidebar %}
+                {% for dir in list %}
+                <div style="row">
+                    <button class="nav-pills shadow-sm" aria-controls="projectsButton">
+                        <a href="{{ url_for('photos', folder=dir) }}" >{{dir}}</a>
+                    </button>
+                </div>
+                {% endfor %}
+              {% endblock %}
+          </div>
+      </div>
+    </div>
+{% endblock %}
+
+
+
+

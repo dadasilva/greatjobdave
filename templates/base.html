@@ -43,7 +43,7 @@
       </div>
       <div class="nav-item ">
         <button class="nav-link" type="button" aria-control="photosButton">
-          <a href="../OLD/photos.html">photos</a>
+          <a href="{{ url_for('photos', folder='people') }}">photos</a>
         </button>
       </div>
     </ul>
@@ -60,8 +60,10 @@
   <!-- BODY -->
   <div class="container">
     <div class="row">
+      <div class="col-9">
         {% block content %}{% endblock %}
-      <div class="col-3 sticky-bottom">
+      </div>
+      <div class="col-3">
         <div id="sidebarList" >
             {% block sidebar %}{% endblock %}
         </div>
@@ -74,6 +76,7 @@
     <div class="navbar fixed-bottom navbar-light bg-transparent" id="foot">
       <div class="nav-item">
         {% block footer %}{% endblock %}
+
       </div>
     </div>
   </footer>
