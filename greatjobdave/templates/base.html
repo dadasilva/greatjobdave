@@ -25,7 +25,7 @@
 
     <!-- MENU -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-warning" id="menu">
-        <a href="{{ url_for('home') }}"><h3>greatjobdave.net</h3></a>
+        <a href="{{ url_for('index') }}"><h3>greatjobdave.net</h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,17 +33,17 @@
       <ul class="navbar-nav mr-auto">
       <div class="nav-item">
         <button class="nav-link" type="button" aria-controls="projectsButton">
-          <a href="{{ url_for('projects') }}">projects</a>
+          <a href="{{ url_for('site.projects') }}">projects</a>
         </button>
       </div>
       <div class="nav-item">
         <button class="nav-link" type="button" aria-controls="notesButton">
-          <a href="{{ url_for('notes') }}">notes</a>
+          <a href="{{ url_for('site.notes') }}">notes</a>
         </button>
       </div>
       <div class="nav-item ">
         <button class="nav-link" type="button" aria-control="photosButton">
-          <a href="{{ url_for('photos', folder='people') }}">photos</a>
+          <a href="{{ url_for('site.photos', folder='people') }}">photos</a>
         </button>
       </div>
     </ul>
