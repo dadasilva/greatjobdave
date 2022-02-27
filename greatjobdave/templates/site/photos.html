@@ -17,7 +17,7 @@
                 {% for dir in list %}
                 <div style="row">
                     <button class="nav-pills shadow-sm" aria-controls="projectsButton">
-                        <a href="{{ url_for('site.photos', folder=dir) }}" >{{dir}}</a>
+                        <a href="{{ url_for('site.photos', folder=dir.name) }}" >{{dir.name}}</a>
                     </button>
                 </div>
                 {% endfor %}
