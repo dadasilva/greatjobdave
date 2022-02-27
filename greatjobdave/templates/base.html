@@ -30,20 +30,25 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse align-top" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto centerAlign">
       <div class="nav-item">
-        <button class="nav-link" type="button" aria-controls="projectsButton">
-          <a href="{{ url_for('site.projects') }}">projects</a>
+        <button class="nav-link" type="button" aria-controls="miscButton">
+          <a href="{{ url_for('site.misc') }}">/misc</a>
         </button>
       </div>
       <div class="nav-item">
-        <button class="nav-link" type="button" aria-controls="notesButton">
-          <a href="{{ url_for('site.notes') }}">notes</a>
+        <button class="nav-link" type="button" aria-controls="textButton">
+          <a href="{{ url_for('site.text') }}">/text</a>
         </button>
       </div>
       <div class="nav-item ">
-        <button class="nav-link" type="button" aria-control="photosButton">
-          <a href="{{ url_for('site.photos', folder='people') }}">photos</a>
+        <button class="nav-link" type="button" aria-control="photoButton">
+          <a href="{{ url_for('site.photo', folder='people') }}">/photo</a>
+        </button>
+      </div>
+        <div class="nav-item ">
+        <button class="nav-link" type="button" aria-control="audioButton">
+          <a href="{{ url_for('site.audio') }}">/audio</a>
         </button>
       </div>
     </ul>
@@ -60,11 +65,11 @@
   <!-- BODY -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-sm-12">
+      <div class="col-lg-9 col-sm-push-12">
         {% block content %}{% endblock %}
       </div>
-      <div class="col-lg-2 col-sm-push-0">
-        <div id="sidebarList" >
+      <div class="col-lg-3 col-sm-push-0">
+        <div class="sidebar" id="sidebarList" >
             {% block sidebar %}{% endblock %}
         </div>
       </div>

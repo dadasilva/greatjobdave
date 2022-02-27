@@ -13,29 +13,36 @@ def index():
     return render_template('site/index.html', photo=data)
 
 
-@bp.route('/projects')
-def projects():
+@bp.route('/misc')
+def misc():
     db = get_db()
     links = db.execute('SELECT text, url, embedded FROM links ORDER BY id ASC').fetchall()
-    return render_template('site/projects.html', data=links)
+    return render_template('site/misc.html', data=links)
 
 
-@bp.route('/notes')
-def notes():
+@bp.route('/text')
+def text():
     db = get_db()
     data=db.execute('SELECT n.title, n.body, n.date FROM notes n ORDER BY date ASC').fetchall()
-    return render_template('/site/notes.html', notes=data)
+    return render_template('/site/text.html', notes=data)
 
-
-@bp.route('/photos/<folder>')
-def photos(folder):
+@bp.route('/audio')
+def audio():
     db = get_db()
-    list = db.execute("SELECT name FROM photo_folder")
-    data = db.execute(
-        f"SELECT f.path, photos.name " \
-        f"FROM photos " \
-        f"LEFT JOIN photo_folder f " \
-        f"on photos.photo_folder_id = f.id " \
-        f"WHERE f.name = {folder}")
+    data=db.execute('SELECT n.title, n.body, n.date FROM notes n ORDER BY date ASC').fetchall()
+    return render_template('/site/audio.html', notes=data)
 
-    return render_template('/site/photos.html', data=data, list=list)
+
+
+@bp.route('/photo/<folder>')
+def photo(folder):
+    db = get_db()
+    list = db.execute("SELECT * FROM photo_folder")
+    data = db.execute(
+        f"SELECT pf.path, photos.name "
+        f"FROM photos "
+        f"LEFT JOIN photo_folder pf "
+        f"on photos.photo_folder_id = pf.id "
+        f"WHERE pf.name = %s", folder)
+
+    return render_template('/site/photo.html', data=data, list=list)

@@ -9,22 +9,21 @@
               {% for p in data %}
                 <div class="container">
                      <div class="col-sm-12 col-lg-24 pics animation all 2">
-                      <img src="{{ p.path }}" class="d-block w-100 mx-auto" alt="{{ p.name }}"></img>
+                      <img src="{{ '../' ~ p.path ~ '/' ~ p.name }}" class="d-block w-100 mx-auto" alt="{{ p.name }}"></img>
                     </div>
                 </div>
               {% endfor %}
-              {% block sidebar %}
-                {% for dir in list %}
-                <div style="row">
-                    <button class="nav-pills shadow-sm" aria-controls="projectsButton">
-                        <a href="{{ url_for('site.photos', folder=dir.name) }}" >{{dir.name}}</a>
-                    </button>
-                </div>
-                {% endfor %}
-              {% endblock %}
           </div>
       </div>
     </div>
+{% endblock %}
+
+{% block sidebar %}
+    {% for dir in list %}
+    <button class="nav-pills shadow-sm">
+        <a href="{{ url_for('site.photo', folder=dir.name) }}" >{{dir.name}}</a>
+    </button>
+    {% endfor %}
 {% endblock %}
 
 
