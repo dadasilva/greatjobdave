@@ -9,11 +9,7 @@ bp = Blueprint('site', __name__)
 @bp.route('/')
 def index():
     db = get_db()
-    data = db.execute('SELECT pf.path, p.name '
-                      'FROM photos p '
-                      'JOIN photo_folder pf ON p.photo_folder_id = pf.id '
-                      'ORDER BY p.name ASC').fetchone()
-    data = data[0]+'/'+data[1]
+    data = db.execute('SELECT p.id, p.photo_folder_id, p.name FROM photos p ORDER BY name ASC').fetchall()
     return render_template('site/index.html', photo=data)
 
 
