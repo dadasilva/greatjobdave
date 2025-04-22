@@ -1,0 +1,58 @@
+# Site settings
+title: greatjobdave.net
+description: A personal blog featuring music, code, and more
+url: "https://greatjobdave.net"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Collections
+collections:
+  drafts:
+    output: true
+    permalink: /drafts/:title/
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      draft: false
+  -
+    scope:
+      path: "_drafts"
+    values:
+      layout: "post"
+      draft: true
+
+# Development settings
+show_drafts: false # Set to true with --drafts flag in development
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - .DS_Store
+  - "*.swp"
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata 
